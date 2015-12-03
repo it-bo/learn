@@ -1,0 +1,25 @@
+<html ng-app="nestable">
+<head>
+    <meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="lib/bootstrap.css" type="text/css" />
+
+<link rel="stylesheet" href="lib/animate.css" type="text/css" />
+<link rel="stylesheet" href="lib/jquery.nestable.css" type="text/css" />
+<link rel="stylesheet" href="lib/app.css" type="text/css" />
+
+<body ng-controller="nestableCtl">
+    <div ng-nestable ng-model="items">
+        <span class="pull-right">
+           <a href><i id="edit" class="glyphicon glyphicon-edit fa-fw m-r-xs"></i></a>
+           <a href><i id="remove" class="glyphicon glyphicon-minus-sign fa-fw"></i></a> 
+        </span> {{$item.text}}
+    </div>
+</body>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/angular.min.js"></script>
+<script src="lib/jquery.nestable.js"></script>
+<script src="js/ui-nestable.js"></script>
+<script src="js/nestable.js"></script>
+
+</html>
